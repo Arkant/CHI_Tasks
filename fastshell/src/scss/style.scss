@@ -167,5 +167,108 @@ table {
         font-weight: 400;
         line-height: 19.5px;/* Приближение из-за подстановки шрифтов */
     }    
-
 /*Button header */
+
+
+/*main services*/
+.services {
+    display: block;
+    justify-content: center;
+    background-color:#17c2a4;
+    width: 100%;
+    height: 747px;
+}
+
+.services-text {
+    color:#ffffff;
+    text-align: center;
+}
+
+.services-text h6 {
+    font-size: 40px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;   
+    line-height: 29.907px;/* Приближение из-за подстановки шрифтов */
+    position: relative;
+    top: 100px;
+}
+.services-text p {
+    position: relative;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 26px; /* Приближение из-за подстановки шрифтов */
+    top: 160px;
+}
+
+.items {
+    position: relative; 
+    top: 30%;
+    text-align: center;
+    color:#ffffff;
+}
+
+// font-size: 24px;/* Приближение из-за подстановки шрифтов */
+// font-weight: 700;
+// line-height: 18px;/* Приближение из-за подстановки шрифтов */
+
+.items p{
+    text-align: center;
+    width: 192px;
+    top: 200px;
+    padding: 40px;
+}
+.img {
+    padding: 1%;
+    display:inline-block;
+}
+.img img {
+    position: relative; 
+    left: 8px;
+    bottom: 18px;
+}
+.img h1 {
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 18px;/* Приближение из-за подстановки шрифтов */    
+    text-align: center;
+    padding: 1%;
+}
+
+.team {
+    
+    background-color:#e7f1f8;
+    width: 100%;
+    height: 915px;
+}
+.team-header h1{
+    position: relative;
+    color: #3c4661;
+    font-size: 40px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 29.907px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleY(1.0321);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    top: 100px;
+}
+
+.team-line {
+    text-align: center;
+    position: relative;
+    background-color: rgba(189, 209, 223, 0.75);
+    width: 87px;
+    height: 6px;
+    top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.team-header p {
+    position: relative;
+    color: #3c4661;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleY(1.0321);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    top: 150px;
+}
