@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -50,17 +51,74 @@ table {
 /*Navigation*/
 .nav li {
   position: relative;
-  display: inline;
-  left: 60%;
-  padding: 1%; }
+  float: left;
+  padding: 1.5%;
+  top: 20px;
+  left: 60%; }
 
 .nav li a:hover {
   border-radius: 4px;
   background-color: #643a79; }
 
 .nav li a {
-  color: white; }
+  color: white;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400; }
 
 /*Navigation*/
 /*LOGO*/
+.header-logo {
+  position: absolute;
+  float: left;
+  top: 5%;
+  left: 15%; }
+
 /*LOGO*/
+/*Text header*/
+.banner-text {
+  position: relative;
+  color: #f7f3eb;
+  font-size: 42.16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  float: right;
+  width: 62.9%;
+  top: 35%;
+  text-align: center;
+  right: 18%; }
+
+/*Text header*/
+/*Button header */
+.banner-button h2 {
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+  line-height: 19.5px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left; }
+
+.banner-button {
+  position: relative;
+  border-radius: 4px;
+  background-color: #eb7d4b;
+  border-radius: 4px;
+  width: 293px;
+  height: 70px;
+  margin: 10%;
+  top: 50%;
+  left: 40%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+.button-text a {
+  position: absolute;
+  top: 35%;
+  right: 30%;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 19.5px;
+  /* Приближение из-за подстановки шрифтов */ }
+
+/*Button header */
