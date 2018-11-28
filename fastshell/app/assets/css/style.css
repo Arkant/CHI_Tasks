@@ -109,7 +109,7 @@ table {
 /*Button header */
 /*main services*/
 .services {
-  display: block;
+  display: inline-block;
   -ms-flex-pack: center;
       justify-content: center;
   background-color: #17c2a4;
@@ -212,6 +212,26 @@ table {
   /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
   top: 150px; }
 
+.minify {
+  padding: 2%;
+  display: inline-block;
+  text-align: center;
+  color: #3c4761;
+  width: 196px;
+  height: 112px; }
+
+.minify img {
+  position: relative;
+  bottom: 18px; }
+
+.minify h1 {
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  padding: 1%; }
+
 .team-items {
   position: relative;
   top: 25%;
@@ -245,6 +265,7 @@ table {
   float: left; }
 
 /*skills*/
+/*---------------------------------------------------*/
 .skills {
   background-color: #ffffff;
   width: auto;
@@ -261,6 +282,7 @@ table {
 .skills-img h1 {
   padding: 10%; }
 
+/*---------------------------------------------------*/
 .portfolio {
   background-color: #ffdd99;
   width: auto;
@@ -318,9 +340,6 @@ table {
   position: relative;
   left: 50%; }
 
-.chosen li {
-  background-color: wheat; }
-
 .portfolio-content li {
   top: 200px;
   margin-right: 10px;
@@ -359,6 +378,7 @@ table {
   font-weight: 400;
   padding: 10; }
 
+/*---------------------------------------------------*/
 .about {
   background-color: #d74680;
   width: auto;
@@ -410,6 +430,7 @@ table {
   line-height: 26px;
   /* Приближение из-за подстановки шрифтов */ }
 
+/*---------------------------------------------------*/
 .contact {
   background-color: #3c5499;
   width: auto;
@@ -466,6 +487,7 @@ input {
   opacity: 1;
   /* Firefox */ }
 
+/*---------------------------------------------------*/
 .footer {
   background-color: #344b8e;
   width: auto;
@@ -495,9 +517,3 @@ input {
   line-height: 29.907px;
   /* Приближение из-за подстановки шрифтов */
   text-align: center; }
-
-  @media only screen and (max-width: 600px) {
-    .body {
-        color: #273a71;
-    }
-}
