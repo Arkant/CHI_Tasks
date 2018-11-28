@@ -86,7 +86,7 @@ table {
 .banner-text h1 {
   font-weight: 700;
   text-align: center;
-  padding: 125px 0 150px; }
+  padding: 200px 0 110px; }
 
 /*Text header*/
 /*Button header */
@@ -415,7 +415,89 @@ table {
   width: auto;
   height: 819px; }
 
+.form {
+  float: left;
+  position: relative;
+  text-align: center;
+  top: 30%; }
+
+.name {
+  background-color: #273a71;
+  width: 414px;
+  height: 56px;
+  color: white;
+  padding-left: 15px;
+  margin-right: 25px;
+  margin-bottom: 50px; }
+
+input {
+  border: 1px;
+  border-color: #273a71; }
+
+.email {
+  background-color: #273a71;
+  width: 414px;
+  height: 56px;
+  color: white;
+  padding-left: 15px; }
+
+.message {
+  background-color: #273a71;
+  width: 860px;
+  height: 200px;
+  color: white;
+  padding-left: 15px; }
+
+.message:-ms-input-placeholder {
+  text-align: left; }
+
+.message::placeholder {
+  text-align: left; }
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */ }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+  /* Firefox */ }
+
 .footer {
   background-color: #344b8e;
   width: auto;
   height: 112px; }
+
+.box_block {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  text-align: center; }
+
+.box_block li {
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  border-radius: 4px;
+  left: auto; }
+
+.box_block li > a {
+  color: #ffffff;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 600;
+  line-height: 29.907px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center; }
+
+  @media only screen and (max-width: 600px) {
+    .body {
+        color: #273a71;
+    }
+}
