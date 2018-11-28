@@ -50,6 +50,7 @@ table {
 
 /*Navigation*/
 .nav li {
+  width: auto;
   position: relative;
   float: left;
   padding: 1.5%;
@@ -77,41 +78,33 @@ table {
 /*LOGO*/
 /*Text header*/
 .banner-text {
-  position: relative;
-  color: #f7f3eb;
-  font-size: 42.16px;
-  /* Приближение из-за подстановки шрифтов */
-  font-weight: 700;
-  top: 35%;
-  text-align: center;
   display: block;
-  right: 12%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20%; }
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff; }
+
+.banner-text h1 {
+  font-weight: 700;
+  text-align: center;
+  padding: 125px 0 150px; }
 
 /*Text header*/
 /*Button header */
 .banner-button {
-  position: inherit;
+  position: relative;
   border-radius: 4px;
   background-color: #eb7d4b;
+  color: #ffffff;
   width: 293px;
   height: 70px;
   line-height: 70px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; }
-
-.banner-button p {
-  color: #ffffff;
+  text-align: center;
   font-size: 18px;
   /* Приближение из-за подстановки шрифтов */
-  font-weight: 400;
-  text-align: center;
-  line-height: 19.5px;
-  /* Приближение из-за подстановки шрифтов */ }
+  font-weight: 400; }
 
 /*Button header */
 /*main services*/
@@ -302,52 +295,127 @@ table {
   /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
   top: 150px; }
 
-.portfolio-items {
-  position: relative;
-  top: 25%;
-  text-align: center;
-  color: #3c4761; }
+.wrap-portfolio {
+  float: left;
+  position: relative; }
 
 .portfolio-img {
   padding: 2%;
-  display: inline-block;
+  float: left;
   text-align: center;
-  color: #3c4761;
-  width: 540px;
-  height: 311px; }
+  color: #3c4761; }
 
 .portfolio-img img {
-  padding: 2%;
   position: relative;
-  bottom: 18px; }
+  left: 25%; }
 
-.buttons li {
-  display: inline-block;
+.portfolio-img p {
+  position: relative;
+  left: 25%; }
+
+.wrap {
+  float: left;
+  position: relative;
+  left: 50%; }
+
+.chosen li {
+  background-color: wheat; }
+
+.portfolio-content li {
+  top: 200px;
+  margin-right: 10px;
+  float: left;
+  position: relative;
   text-align: center;
+  left: -50%;
   padding: 10px;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.08);
   width: 50px; }
 
-.buttons ul {
-  padding: 0;
-  display: block;
-  text-align: center;
-  position: relative;
-  margin-left: auto;
+.portfolio-items li {
+  top: 300px;
   margin-right: auto;
-  top: 180px; }
+  margin-left: auto;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 10px; }
 
 .portfolio-button {
-  text-align: center;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  top: 400px;
   border-radius: 4px;
   background-color: #17c2a4;
   width: 293px;
-  height: 70px; }
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 1200px;
+  text-align: center;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  padding: 10; }
 
-.portfolio-button p {
-  top: 50%; }
+.about {
+  background-color: #d74680;
+  width: auto;
+  height: 895px;
+  color: white; }
+
+.feedback {
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 450px;
+  height: 150px;
+  padding-bottom: 150px;
+  left: 10%;
+  bottom: 40px;
+  float: left; }
+
+.text-feed p {
+  position: relative;
+  left: 250px;
+  top: -130px;
+  font-family: 'TitilliumWeb';
+  color: #ffffff;
+  font-size: 21px;
+  /* Приближение из-за подстановки шрифтов */
+  font-style: italic;
+  line-height: 26px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left; }
+
+.text-feed h1 {
+  text-align: center;
+  position: relative;
+  left: 135px;
+  top: -140px;
+  font-size: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700; }
+
+.text-feed h2 {
+  text-align: center;
+  position: relative;
+  left: 125px;
+  top: -120px;
+  color: #ffdd99;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 26px;
+  /* Приближение из-за подстановки шрифтов */ }
+
+.contact {
+  background-color: #3c5499;
+  width: auto;
+  height: 819px; }
+
+.footer {
+  background-color: #344b8e;
+  width: auto;
+  height: 112px; }
