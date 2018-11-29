@@ -44,6 +44,16 @@ table {
 	border-spacing: 0;
 }
 
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: block;
+}
+.clearfix:after {
+clear: both;
+}
+
+
 .header {
     background-color:#87509c;
     width: 100%;
@@ -123,7 +133,9 @@ table {
     justify-content: center;
     background-color:#17c2a4;
     width: 100%;
-    height: 747px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 50px;
 }
 
 .services-text {
@@ -146,9 +158,17 @@ table {
     top: 160px;
 }
 
+.second {
+    position: relative;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 26px; /* Приближение из-за подстановки шрифтов */
+    top: 160px;
+    padding-bottom: 50px;
+}
+
 .items {
     position: relative; 
-    top: 30%;
     text-align: center;
     color:#ffffff;
 }
@@ -158,9 +178,10 @@ table {
     width: 192px;
     top: 200px;
     padding: 40px;
+    padding-bottom: 50px;
 }
 .img {
-     padding: 1%;
+     padding-top: 200px;
     display:inline-block;
 }
 .img img {
@@ -173,13 +194,14 @@ table {
     font-weight: 700;
     line-height: 18px;/* Приближение из-за подстановки шрифтов */    
     text-align: center;
-    padding: 1%;
 }
 
 .team {
     background-color:#E7F1F8;
     width: 100%;
-    height: 915px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 150px;
 }
 .team-header h1{
     position: relative;
@@ -213,6 +235,7 @@ table {
     text-align: center;
     transform: scaleY(1.0321);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
     top: 150px;
+    padding-bottom: 250px;
 }
 
 .minify {
@@ -227,6 +250,9 @@ table {
     position: relative; 
     bottom: 18px;
 }
+.minify img:not(.icon){
+    padding-top: 100px;
+}
 .minify h1 {
     font-size: 24px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;   
@@ -238,6 +264,7 @@ table {
     top: 25%;
     text-align: center;
     color:#3c4761;
+    padding-bottom: 100px;
 }
 .team-img {
     padding: 2%;
@@ -263,6 +290,7 @@ table {
     text-align: center;
     top: 10%;
     float: left;
+    padding-bottom: 100px;
 }
 
 /*skills*/
@@ -270,7 +298,9 @@ table {
 .skills {
 background-color:#ffffff;
 width:auto;
-height: 655px;
+height: auto;
+overflow: hidden;
+padding-bottom: 120px;
 }
 
 .skills-img {
@@ -281,9 +311,12 @@ height: 655px;
     width: 196px;
     height: 112px;
 }
-
+.skills-img img {
+    padding-top: 180px ;
+}
 .skills-img h1 {
     padding: 10%;
+    padding-bottom: 100px;
 }
 
 .skills-line {
@@ -314,7 +347,8 @@ height: 655px;
 .portfolio {
     background-color:#ffdd99;
     width: auto;
-    height: 1423px;
+    height: auto;
+    overflow: hidden;
     color: #393939;
 }
 
@@ -340,26 +374,6 @@ height: 655px;
     top: 150px;
 }
 
-.wrap-portfolio{
-    float: left;
-    position: relative;
-}
-.portfolio-img {
-    padding: 2%;
-    float: left;
-    text-align: center;
-    color: #3c4761;
-
-}
-.portfolio-img img {
-    position: relative; 
-    left: 25%;
-}
-.portfolio-img p {
-    position: relative; 
-    left: 25%;
-}
-
 .wrap {
     float: left;
     position: relative;
@@ -376,19 +390,28 @@ height: 655px;
     left: -50%;
     padding: 10px;
     border-radius: 4px;
-    background-color:
-    rgba(0, 0, 0, 0.08);
+    background-color:rgba(0, 0, 0, 0.08);
     width: 50px;
 }
 
-.portfolio-items li {
-    top: 300px;
-    margin-right: auto;
-    margin-left: auto;
-    float: left;
+.portfolio-img {
     position: relative;
+    left: -45%;
+    padding-bottom: 500px;
+    padding-right: 450px;
+    display: inline-block;
     text-align: center;
-    padding: 10px;
+    color: #3c4761;
+    width: 196px;
+    height: 112px;
+}
+.portfolio-img img {
+    padding-top: 250px ;
+}
+.portfolio-img h1 {
+    position: relative;
+    padding-top: 10px ;
+    left: 90%;
 }
 .portfolio-button {
     position: relative;
@@ -410,7 +433,8 @@ height: 655px;
 .about {
     background-color:#d74680;
     width: auto;
-    height: 895px;
+    height: auto;
+    overflow: hidden;
     color:white;
 }
 
@@ -426,10 +450,25 @@ height: 655px;
     float: left;
 }
 
+.about-img {
+    position: relative;
+    left: -45%;
+    padding-bottom: 100px;
+    padding-right: 450px;
+    display: inline-block;
+    text-align: center;
+    color: #3c4761;
+    width: 196px;
+    height: 112px;
+}
+.about-img img {
+    padding-top: 60px ;
+}
+
 .text-feed p{
     position: relative;
     left: 250px;
-    top: -130px;
+    top: -100px;
     font-family: 'TitilliumWeb';
     color: #ffffff;
     font-size: 21px; /* Приближение из-за подстановки шрифтов */
@@ -440,8 +479,8 @@ height: 655px;
 .text-feed h1{
     text-align: center;
     position: relative;
-    left: 135px;
-    top: -140px;
+    left: 220px;
+    top: -90px;
     font-size: 24px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;
     //line-height: 26px;/* Приближение из-за подстановки шрифтов */
@@ -449,8 +488,8 @@ height: 655px;
 .text-feed h2{
     text-align: center;
     position: relative;
-    left: 125px;
-    top: -120px;
+    left: 225px;
+    top: -80px;
     color:#ffdd99;
     font-size: 18px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
@@ -508,6 +547,28 @@ input {
     opacity: 1; /* Firefox */
 }
 
+.message-header h1{
+    position: relative;
+    color: #3c4661;
+    font-size: 40px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 29.907px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleY(1.0321);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    top: 100px;
+}
+
+.message-header p {
+    position: relative;
+    color: #3c4661;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 26px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleY(1.0321);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    top: 150px;
+    padding-bottom: 80px;
+}
 
 
 /*---------------------------------------------------*/
