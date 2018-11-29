@@ -15,12 +15,47 @@
 }
 
 
+@media only screen and (min-width:900px) and (max-width:1300px){
+    .portfolio-button {
+        position: relative;
+        border-radius: 4px;
+        background-color: #17c2a4;
+        width: 293px;
+        height: 70px;
+        line-height: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        top: 2505px;
+        text-align: center;
+        font-size: 18px;/* Приближение из-за подстановки шрифтов */
+        font-weight: 400;
+        padding: 10;
+    }
+}
+
 /*------------------------------------------------------------------*/
 @media only screen and (min-width: 470px) and (max-width:900px) {
     .nav {
         display: none;
     }
 /*************************************************************/
+.portfolio-button {
+    position: relative;
+    border-radius: 4px;
+    background-color: #17c2a4;
+    width: 293px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 2500px;
+    text-align: center;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    padding: 10;
+}
     .portfolio-img {
         position: relative;
         left: -41%;
@@ -33,7 +68,9 @@
         height: 112px;
     }
     .portfolio-img img {
-        padding-top: 250px ;
+        padding-top: 100px ;
+        width: 500px;
+        height: 300px;
     }
     .portfolio-img h1 {
         position: relative;
@@ -235,25 +272,29 @@
 
 }
 
-
-
-/*------------------------------------------------------------------*/
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
-
-}
-
-
-
-/*-----------------------------------------------------*/
-
-@media only screen and (min-width:320px) and (max-width:500px){
-
-}
-
-@media only screen and (min-width:500px) and (max-width:1000px){
-
-}
-
-@media only screen and (min-width:1000px) and (max-width:2000px){
-
-}
+/********************************************/
+@media screen and (max-width: 999px) {
+    .menu__icon{
+      display: inline-block;
+    }
+    
+    .menu__links {
+      position: relative;
+      display: none;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin-top: 52px;
+      background-color:#643a79;
+      height: 40px;
+      z-index: 1000;
+      overflow: auto;
+    }
+    
+    .menu__links-item {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      color: #ffffff;
+    }
+  }

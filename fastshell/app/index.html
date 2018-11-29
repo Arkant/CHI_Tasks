@@ -18,30 +18,28 @@
     <script src="assets/components/modernizr/modernizr.js"></script>
   </head>
   <body>
-
+            
     <header class="header">
           <div class="header-logo">
               <img class="logo" src="./assets/img/logo.png" alt="none">
           </div>
-          <nav class="nav">
-            <ul>
-              <li class="menu-item">
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/">About</a>
-                </li>
-              <li>
-                <a href="/">Work</a>
-              </li>
-              <li>
-                <a href="/">Blog</a>
-              </li>
-              <li>
-                <a href="/">Contact</a>
-              </li>
-            </ul>
-          </nav>
+
+          <div class="menu">
+                <div class="menu__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              
+                <div class="menu__links">
+                        <a href="/">Home</a>
+                        <a href="/">About</a>
+                        <a href="/">Work</a>
+                        <a href="/">Blog</a>
+                        <a href="/">Contact</a>
+                </div>
+            </div>
           <div class="banner-text">
               <h1>
                   Hi there! We are the new kids on the block<br>
@@ -189,7 +187,7 @@
             </div>
             <!-- Поменять на портфолио -->
             <div>
-                <a style="position: relative; top: 1300px; "  class="portfolio-button">LOAD MORE PROJECTS</a>   
+                <a  class="portfolio-button">LOAD MORE PROJECTS</a>   
             </div>
             
             <div class="wrap">
@@ -273,6 +271,7 @@
                 <input type="email" class="email" placeholder="Your Email">
                 <input type="text" class="message" placeholder="Your Message">
               </div>
+              <a href="/" class="send-button">SEND MESSAGE</a>
           </div>
         </section>
 

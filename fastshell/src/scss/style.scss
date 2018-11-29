@@ -59,26 +59,104 @@ clear: both;
     width: 100%;
     height: 596px;
 }
-/*Navigation*/
-.nav li {
-    width: auto;
-    position: relative;
-    float: left;
-    padding: 1.5%;
-    top: 20px;
-    left: 60%;
+
+
+/*menu*/
+.menu {
+    top:20px;
+    text-align: right;
 }
-.nav li a:hover {
+
+.menu a:hover {
     border-radius: 4px;
     background-color:#643a79;
 }
-
-.nav li a {
+.menu a {
     color: white;
     font-size: 16px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
+    padding: 1.5%;
 }
-/*Navigation*/
+
+.menu__icon {
+   display: none;
+   width: 45px;
+   height: 35px;
+   position: relative;
+   cursor: pointer;
+}
+
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #333333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+
+.menu__links {
+    position: relative;
+    top: 50px;
+}
+.menu__links-item {
+    display: inline-block;
+    color: #333333;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu__links-item:hover {
+    text-decoration: underline;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+
+/*menu*/
 
 /*LOGO*/
 
@@ -423,7 +501,7 @@ padding-bottom: 120px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    top: 1200px;
+    top: 1300px;
     text-align: center;
     font-size: 18px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
@@ -586,6 +664,22 @@ width: auto;
 height: 112px;
 }
 
+.send-button {
+    position: relative;
+    border-radius: 4px;
+    background-color: #17c2a4;
+    width: 293px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top:255px;
+    text-align: center;
+    font-size: 18px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    padding: 10;
+}
 
 .box_block {
     margin: 0px;
