@@ -16,7 +16,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Titillium Web';
   vertical-align: baseline;
   text-decoration: none; }
 
@@ -54,11 +54,12 @@ table {
 .header {
   background-color: #87509c;
   width: 100%;
-  height: 596px; }
+  height: 596px;
+  min-height: 100vh;
+  max-height: 200vh; }
 
 /*menu*/
 .menu {
-  top: 20px;
   text-align: right; }
 
 .menu a:hover {
@@ -66,25 +67,32 @@ table {
   background-color: #643a79; }
 
 .menu a {
+  font-family: 'Titillium Web';
   color: white;
   font-size: 16px;
   /* Приближение из-за подстановки шрифтов */
   font-weight: 400;
-  padding: 1.5%; }
+  margin-right: 22px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .menu__icon {
+  position: relative;
   display: none;
   width: 45px;
   height: 35px;
-  position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  top: 30px;
+  right: 50px; }
 
 .menu__icon span {
   display: block;
   position: absolute;
   height: 9px;
   width: 100%;
-  background: #333333;
+  background: white;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -102,8 +110,8 @@ table {
   top: 26px; }
 
 .menu__links {
-  position: relative;
-  top: 50px; }
+  padding-top: 70px;
+  margin-right: 180px; }
 
 .menu__links-item {
   display: inline-block;
@@ -115,9 +123,6 @@ table {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer; }
-
-.menu__links-item:hover {
-  text-decoration: underline; }
 
 .menu.menu_state_open .menu__icon span:nth-child(1) {
   top: 18px;
@@ -145,8 +150,8 @@ table {
 .header-logo {
   position: absolute;
   float: left;
-  top: 5%;
-  left: 15%; }
+  top: 8%;
+  left: 16.5%; }
 
 /*LOGO*/
 /*Text header*/
@@ -154,19 +159,19 @@ table {
   display: block;
   font-size: 32px;
   line-height: 40px;
-  color: #ffffff; }
+  color: #fff;
+  margin-bottom: 60px;
+  padding-top: 150px; }
 
 .banner-text h1 {
   font-weight: 700;
   text-align: center;
-  padding: 200px 0 110px; }
+  font-size: 40px; }
 
 /*Text header*/
 /*Button header */
 .banner-button {
-  position: relative;
   border-radius: 4px;
-  background-color: #eb7d4b;
   color: #ffffff;
   width: 293px;
   height: 70px;
@@ -179,78 +184,66 @@ table {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 400; }
 
+.orange {
+  background-color: #eb7d4b; }
+
+.banner-button:hover {
+  background-color: #ea7642; }
+
 /*Button header */
 /*main services*/
 .services {
-  display: inline-block;
-  -ms-flex-pack: center;
-      justify-content: center;
   background-color: #17c2a4;
   width: 100%;
-  height: auto;
-  overflow: hidden;
-  padding-bottom: 50px; }
+  padding-top: 110px;
+  min-height: 100vh; }
 
 .services-text {
-  color: #ffffff;
-  text-align: center; }
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px; }
 
 .services-text h6 {
-  font-size: 40px;
+  font-size: 38px;
   /* Приближение из-за подстановки шрифтов */
   font-weight: 700;
-  line-height: 29.907px;
-  /* Приближение из-за подстановки шрифтов */
-  position: relative;
-  top: 100px; }
+  margin-bottom: 40px; }
 
 .services-text p {
-  position: relative;
   font-size: 18px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 400;
-  line-height: 26px;
-  /* Приближение из-за подстановки шрифтов */
-  top: 160px; }
+  line-height: 26px; }
 
 .second {
-  position: relative;
   font-size: 18px;
   /* Приближение из-за подстановки шрифтов */
   font-weight: 400;
   line-height: 26px;
-  /* Приближение из-за подстановки шрифтов */
-  top: 160px;
-  padding-bottom: 50px; }
+  /* Приближение из-за подстановки шрифтов */ }
 
 .items {
-  position: relative;
   text-align: center;
-  color: #ffffff; }
+  color: #ffffff;
+  padding-bottom: 30px; }
 
-.items p {
-  text-align: center;
-  width: 192px;
-  top: 200px;
-  padding: 40px;
-  padding-bottom: 50px; }
+.img-text {
+  display: inline-block;
+  margin-bottom: 40px; }
 
-.img {
-  padding-top: 200px;
-  display: inline-block; }
+.img-text img {
+  margin-bottom: 45px; }
 
-.img img {
-  position: relative;
-  left: 8px;
-  bottom: 18px; }
-
-.img h1 {
+.img-text h1 {
   font-size: 24px;
   /* Приближение из-за подстановки шрифтов */
   font-weight: 700;
   line-height: 18px;
   /* Приближение из-за подстановки шрифтов */
-  text-align: center; }
+  margin-bottom: 10px; }
+
+.img-text p {
+  padding-right: 10px;
+  width: 250px; }
 
 .team {
   background-color: #E7F1F8;
@@ -260,7 +253,6 @@ table {
   padding-bottom: 150px; }
 
 .team-header h1 {
-  position: relative;
   color: #3c4661;
   font-size: 40px;
   /* Приближение из-за подстановки шрифтов */
@@ -275,7 +267,6 @@ table {
 
 .team-line {
   text-align: center;
-  position: relative;
   background-color: rgba(189, 209, 223, 0.75);
   width: 87px;
   height: 6px;
@@ -285,7 +276,6 @@ table {
   margin-right: auto; }
 
 .team-header p {
-  position: relative;
   color: #3c4661;
   font-size: 18px;
   /* Приближение из-за подстановки шрифтов */
@@ -308,7 +298,6 @@ table {
   height: 112px; }
 
 .minify img {
-  position: relative;
   bottom: 18px; }
 
 .minify img:not(.icon) {
@@ -323,7 +312,6 @@ table {
   padding: 1%; }
 
 .team-items {
-  position: relative;
   top: 25%;
   text-align: center;
   color: #3c4761;
@@ -338,7 +326,6 @@ table {
   height: 112px; }
 
 .team-img img {
-  position: relative;
   bottom: 18px; }
 
 .team-img h1 {
@@ -382,7 +369,6 @@ table {
 
 .skills-line {
   text-align: center;
-  position: relative;
   background-color: rgba(189, 209, 223, 0.75);
   width: 87px;
   height: 6px;
@@ -416,7 +402,6 @@ table {
   color: #393939; }
 
 .portfolio-header h1 {
-  position: relative;
   color: #393939;
   font-size: 40px;
   /* Приближение из-за подстановки шрифтов */
@@ -430,7 +415,6 @@ table {
   top: 100px; }
 
 .portfolio-header p {
-  position: relative;
   color: #393939;
   font-size: 18px;
   /* Приближение из-за подстановки шрифтов */
@@ -445,14 +429,12 @@ table {
 
 .wrap {
   float: left;
-  position: relative;
   left: 50%; }
 
 .portfolio-content li {
   top: 200px;
   margin-right: 10px;
   float: left;
-  position: relative;
   text-align: center;
   left: -50%;
   padding: 10px;
@@ -461,7 +443,6 @@ table {
   width: 50px; }
 
 .portfolio-img {
-  position: relative;
   left: -45%;
   padding-bottom: 500px;
   padding-right: 450px;
@@ -475,12 +456,10 @@ table {
   padding-top: 250px; }
 
 .portfolio-img h1 {
-  position: relative;
   padding-top: 10px;
   left: 90%; }
 
 .portfolio-button {
-  position: relative;
   border-radius: 4px;
   background-color: #17c2a4;
   width: 293px;
@@ -506,7 +485,6 @@ table {
 
 .feedback {
   text-align: center;
-  position: relative;
   display: block;
   width: 450px;
   height: 150px;
@@ -516,7 +494,6 @@ table {
   float: left; }
 
 .about-img {
-  position: relative;
   left: -45%;
   padding-bottom: 100px;
   padding-right: 450px;
@@ -530,7 +507,6 @@ table {
   padding-top: 60px; }
 
 .text-feed p {
-  position: relative;
   left: 250px;
   top: -100px;
   font-family: 'TitilliumWeb';
@@ -544,7 +520,6 @@ table {
 
 .text-feed h1 {
   text-align: center;
-  position: relative;
   left: 160px;
   top: -90px;
   font-size: 26px;
@@ -559,7 +534,6 @@ table {
 
 .text-feed h2 {
   text-align: center;
-  position: relative;
   left: 155px;
   top: -80px;
   color: #ffdd99;
@@ -577,7 +551,6 @@ table {
 
 .form {
   display: inline-block;
-  position: relative;
   text-align: center;
   top: 30%; }
 
@@ -627,7 +600,6 @@ input {
   /* Firefox */ }
 
 .message-header h1 {
-  position: relative;
   color: #3c4661;
   font-size: 40px;
   /* Приближение из-за подстановки шрифтов */
@@ -641,7 +613,6 @@ input {
   top: 100px; }
 
 .message-header p {
-  position: relative;
   color: #3c4661;
   font-size: 18px;
   /* Приближение из-за подстановки шрифтов */
@@ -662,7 +633,6 @@ input {
   height: 112px; }
 
 .send-button {
-  position: relative;
   border-radius: 4px;
   background-color: #17c2a4;
   width: 293px;
@@ -688,7 +658,6 @@ input {
   list-style: none;
   display: inline;
   margin-right: 10px;
-  position: relative;
   text-align: center;
   margin-left: auto;
   border-radius: 4px;
