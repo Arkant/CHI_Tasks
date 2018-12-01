@@ -40,23 +40,7 @@
         display: none;
     }
 /*************************************************************/
-.portfolio-button {
-    position: relative;
-    border-radius: 4px;
-    background-color: #17c2a4;
-    width: 293px;
-    height: 70px;
-    line-height: 70px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    top: 2500px;
-    text-align: center;
-    font-size: 18px;/* Приближение из-за подстановки шрифтов */
-    font-weight: 400;
-    padding: 10;
-}
-    .portfolio-img {
+    /* .portfolio-img {
         position: relative;
         left: -41%;
         padding-bottom: 500px;
@@ -76,7 +60,7 @@
         position: relative;
         padding-top: 10px ;
         left: 90%;
-    }
+    } */
 /*************************************************************/
     .team-header h1{
         position: relative;
