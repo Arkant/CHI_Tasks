@@ -177,8 +177,6 @@ clear: both;
 /*Text header*/
 .banner-text {
     display: block;
-    font-size: 32px;
-    line-height: 40px;
     color: #fff;
     margin-bottom: 60px;
     padding-top: 150px;
@@ -662,3 +660,27 @@ padding-top: 40px;
     text-align: center;
   }
   
+  .place_holder {
+    z-index: 100;    
+    left: 10px;
+    cursor: text;   
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    width: 100%;    
+    display: none;
+    color: lightgrey;
+}
+
+.placeinput input:invalid + .place_holder {
+     display: inline;
+}
+
+/*вся проблема в том, если placeholder больше инпута*/
+.placeinput {
+    position: relative;
+    overflow: hidden;
+}
+.place_holder span {
+    color: red;
+}

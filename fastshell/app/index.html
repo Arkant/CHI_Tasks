@@ -11,7 +11,7 @@
     <link href="//www.google-analytics.com" rel="dns-prefetch">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
     <link href="assets/css/style.min.css" rel="stylesheet">
-    <!-- <link href="assets/css/media.css" rel="stylesheet"> -->
+    <link href="assets/css/media.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!--Шрифт --> 
@@ -150,7 +150,7 @@
               <div  class="team-img">
                   <img src="./assets/img/Base.png" alt="none">
                       <h1>ASHLEY GRENNE</h1>
-                      <p style="color:#30bae7; padding: 2%; margin-bottom: 20px;">SEO / Developer</p>
+                      <p style="color:#30bae7; padding: 2%;">SEO / Developer</p>
                       <p>Lorem ipsum dolor sit amet, 
                             consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.magnaeuismod tincidunt ut laoreet dolore tincidunt ut laoreet</p>
                             <div class="circle" >
@@ -174,19 +174,19 @@
                 </div>
                 <div class="skills-items">
                     <div class="skills-img">
-                        <img src="./assets/img/Progress.png" alt="none">
+                        <img style="width: 163px;height: 163px"  src="./assets/img/Progress.png" alt="none">
                         <h1>WEB DESIGN</h1>
                     </div>
                     <div class="skills-img">
-                        <img src="./assets/img/Progress (3).png" alt="none">
+                        <img style="width: 163px;height: 163px" src="./assets/img/Progress (3).png" alt="none">
                         <h1>HTML / CSS</h1>
                     </div>
                     <div class="skills-img">
-                        <img src="./assets/img/Progress (1).png" alt="none">
+                        <img style="width: 163px;height: 163px" src="./assets/img/Progress (1).png" alt="none">
                         <h1>GRAPHIC DESIGN</h1>
                     </div>
                     <div class="skills-img">
-                        <img src="./assets/img/Progress (2).png" alt="none">
+                        <img style="width: 163px;height: 163px" src="./assets/img/Progress (2).png" alt="none">
                         <h1>UI / UX</h1>
                     </div>
                 </div>
@@ -269,9 +269,15 @@
                         <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
                 </div>
               <div class="contact-items">
-                <input  type="text" class="name" placeholder="Your Name">
-                <input  type="email" class="email" placeholder="Your Email">
-                <input  type="text" class="message" placeholder="Your Message">
+                  <label class="placeinput"><input  class="name" required="1" type="text" id="name">
+                    <div class="place_holder">Your name<span>*</span></div>
+                </label>
+                <label class="placeinput"><input  class="email" required="1" type="text" id="name">
+                    <div class="place_holder">Your Email<span>*</span></div>
+                </label>
+                <label class="placeinput"><input  class="message" required="1" type="text" id="name">
+                    <div class="place_holder">Your Message<span>*</span></div>
+                </label>
               </div>
               <a href="javascript:void(0)" class="banner-button blue">SEND MESSAGE</a>
         </section>
