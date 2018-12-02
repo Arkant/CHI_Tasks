@@ -481,7 +481,7 @@
     }
 }
 
-@media screen and (min-width: 1300px) and (max-width:4200px) { 
+@media screen and (min-width: 1700px) and (max-width:6400px) { 
     .contact {
         background-color: #3c5499;
         color: white;
@@ -543,4 +543,39 @@
         color: white;
         padding-left: 15px;
     }
+}
+
+
+
+@media screen and (min-width: 1700px) and (max-width:2400px) {  
+
+    .about-img {
+        padding-right: 300px;
+    }
+
+    .portfolio-img img {
+        height: 350px;
+        width: 660px;
+        margin-bottom: 23px;
+    }
+    .portfolio-img {
+        padding-right: 100px;
+    }
+    .portfolio {
+        background-color: #fd9;
+        width: auto;
+        min-height: 1208px;
+        overflow: hidden;
+        color: #393939;
+        padding-top: 113px;
+    }
+    .portfolio {
+        background-color:#ffdd99;
+        width: auto;
+        height: 1000px;
+        overflow: hidden;
+        color: #393939;
+        padding-top:113px;
+    }
+
 }
