@@ -100,6 +100,10 @@ body {
   width: 500px;
   font-size: 12px; }
 
+.active {
+  background: #ae3b44;
+  color: #212121; }
+
 .main-content {
   display: -ms-flexbox;
   display: flex;
@@ -112,31 +116,33 @@ body {
   width: 35%;
   height: 1478px; }
 
-.left-nav-head {
+.left-nav h1 {
   font-size: 18px;
   color: #212121;
   line-height: 40px;
   text-indent: 12px;
-  background: url("../img/line(1).png"); }
+  background: url("../img/line(1).png");
+  font-weight: 400; }
 
 .left-nav-nav {
   font-size: 12px; }
 
 .left-nav-nav ul li {
   text-indent: 15px;
-  line-height: 39px;
+  line-height: 39.8px;
   border-bottom: 1px solid #ccc; }
 
-.left-nav-nav ul li:hover {
+.left-nav-nav ul li p:hover {
   color: #ae3b44; }
 
 .left-nav-nav ul li .crm-class li {
-  text-indent: 25px;
+  text-indent: 37px;
   background-color: #9ca0a2;
-  border-bottom: 1px solid  #E8E9E9; }
+  border-bottom: 1px solid  #E8E9E9;
+  line-height: 39px; }
 
 .left-nav-nav ul li .crm-class li .email-class li {
-  text-indent: 35px;
+  text-indent: 58px;
   background-color: #ccc;
   border-bottom: 1px solid  #E8E9E9; }
 
@@ -326,12 +332,13 @@ body {
   margin-right: auto; }
 
 .quicklinks {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 12px;
   padding-left: 27px; }
 
 .quicklinks h3 {
   font-size: 15px;
+  font-weight: 400;
   margin-bottom: 27px; }
 
 .quick-uls {
@@ -347,10 +354,25 @@ body {
 .quick-uls li {
   padding-bottom: 7px; }
 
+.quick-uls li:hover {
+  color: #ae3b44; }
+
 .security {
-  font-weight: 100;
   font-size: 12px;
-  padding-left: -27px; }
+  padding-left: -27px;
+  position: relative;
+  right: 5%; }
+
+.security h3 {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 27px; }
+
+.security li {
+  padding-bottom: 7px; }
+
+.security li:hover {
+  color: #ae3b44; }
 
 .security h3 {
   font-size: 15px;
@@ -359,14 +381,13 @@ body {
 .security li {
   padding-bottom: 7px; }
 
-.security h3 {
-  font-size: 15px;
-  margin-bottom: 27px; }
-
-.security li {
-  padding-bottom: 7px; }
+.touch {
+  position: relative;
+  right: 8%; }
 
 .touch h3 {
+  font-size: 15px;
+  font-weight: 400;
   margin-bottom: 20px; }
 
 .touch ul {
@@ -374,10 +395,13 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 10px; }
+  margin-bottom: 19px; }
 
 .touch i {
   color: grey; }
+
+.touch p {
+  font-size: 10.99px; }
 
 .touch > ul > li > a > .fa-rss-square:hover {
   color: #F79236; }
@@ -390,3 +414,10 @@ body {
 
 .touch > ul > li > a > .fa-tumblr-square:hover {
   color: #33455C; }
+
+.flexit {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flexit i {
+  padding-top: 15px; }
