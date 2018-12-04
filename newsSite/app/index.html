@@ -12,43 +12,46 @@
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
     <link href="assets/css/style.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/defauts.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+    crossorigin="anonymous">
     <script src="assets/components/modernizr/modernizr.js"></script>
   </head>
   <body>
                                                       
     <header class="header" role="banner">
-      <div class="logic">
-          <img src="./assets/img/openlogic.png" alt="none">
-      </div> 
-      <nav class="navigaton">
-        <ul class="outer">
-          <li class="outer-li"><a href="/">Home</a> </li>
-          <li class="outer-li"><a href="/">News</a></li>
-          <li class="outer-li"><a href="/">Gallery</a></li>
-          <li class="outer-li"><a href="/">Pages</a></li>
-          <li class="outer-li-5" ><a style="color:red;" href="/">Layouts</a>        
-            <ul class="submenu-first">
-              <li submenu-li><a href=#>Headers</a> 
-                <ul class="submenu-second">
-                  <li class="submenu-li-second"><a href="">No header</a></li>
-                  <li class="submenu-li-second"><a href="">Only bread crumbs</a></li>
-                  <li class="submenu-li-second"><a href="">Automatic</a></li>
-                  <li class="submenu-li-second"><a href="">Custom Text/HTML</a></li>
-                  <li class="submenu-li-second"><a href="">Twitter feed</a></li>
-                  <li class="submenu-li-second"><a href="">Slider</a></li>
+      <div class="header-nav">
+          <div class="logic">
+              <img src="./assets/img/openlogic.png" alt="none">
+          </div> 
+          <nav class="navigaton">
+            <ul class="outer">
+              <li class="outer-li"><a href="/">Home</a> </li>
+              <li class="outer-li"><a href="/">News</a></li>
+              <li class="outer-li"><a href="/">Gallery</a></li>
+              <li class="outer-li"><a href="/">Pages</a></li>
+              <li class="outer-li-5" ><a style="color:red;" href="/">Layouts</a>        
+                <ul class="submenu-first">
+                  <li submenu-li><a href=#>Headers</a> 
+                    <ul class="submenu-second">
+                      <li class="submenu-li-second"><a href="">No header</a></li>
+                      <li class="submenu-li-second"><a href="">Only bread crumbs</a></li>
+                      <li class="submenu-li-second"><a href="">Automatic</a></li>
+                      <li class="submenu-li-second"><a href="">Custom Text/HTML</a></li>
+                      <li class="submenu-li-second"><a href="">Twitter feed</a></li>
+                      <li class="submenu-li-second"><a href="">Slider</a></li>
+                    </ul>
+                  </li>
+                  <li submenu-li><a href=#>Sidebars</a></li>
+                  <li submenu-li><a href=#>Columns</a></li>
                 </ul>
               </li>
-              <li submenu-li><a href=#>Sidebars</a></li>
-              <li submenu-li><a href=#>Columns</a></li>
+              <li class="outer-li"><a href="/">Features</a></li>
+              <li class="outer-li"><a href="/">Blog</a></li>
+              <li class="outer-li"><a href="/">Contact</a></li>
             </ul>
-          </li>
-          <li class="outer-li"><a href="/">Features</a></li>
-          <li class="outer-li"><a href="/">Blog</a></li>
-          <li class="outer-li"><a href="/">Contact</a></li>
-        </ul>
-      </nav>
-
+          </nav>
+      </div>
     </header>
 
     <main class="main" >
@@ -185,18 +188,60 @@
       </section>
 
       <section class="sponsors">
-
+        <div class="sponsor-image"></div>
+        <div class="sponsor-image"></div>
+        <div class="sponsor-image"></div>
+        <div class="sponsor-image"></div>
+        <div class="sponsor-image"></div>
+        <div class="sponsor-image"></div>
       </section>
     </main>
 
-    <footer class="footer" role="contentinfo">
-      <div class="quicklinks">
-        <div class="quick-one"></div>
-        <div class="quick-two"></div>
-        <div class="quick-three"></div>
+    <footer class="footer" >
+      <div class="footer-main">
+          <div class="quicklinks">
+              <h3>Quick links</h3>
+              <div class="quick-uls">
+                <ul>
+                  <li>Your custom</li>
+                  <li>Additional menu
+                      </li>
+                  <li>Features</li>
+                  <li>Pircing</li>
+                  <li>Cusomers</li>
+                </ul>
+                <ul>
+                  <li>Additional menu</li>
+                  <li>Features</li>
+                  <li>Pircing</li>
+                  <li>Cusomers</li>
+                </ul>
+                <ul>
+                  <li>Features</li>
+                  <li>Pricing</li>
+                  <li>Cusomers</li>
+                </ul>
+              </div>
+            </div>            
+        <div class="security">
+          <h3>Security & Privacy</h3>
+          <ul>
+            <li>Security</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+        <div class="touch">
+            <h3>Stay in touch</h3>
+                  <ul>
+                    <li><a href=""><i class="fab fa-2x fa-tumblr-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-2x fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-2x fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fas fa-2x fa-rss-square"></i></a></li>
+                  </ul>
+                <p>Copyright (C) 2011 Company Inc.</p>
+        </div>
       </div>
-      <div class="security"></div>
-      <div class="touch"></div>
     </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>

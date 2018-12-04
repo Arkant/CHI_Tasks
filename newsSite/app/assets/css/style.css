@@ -9,7 +9,7 @@ body {
   position: relative;
   top: -17px; }
 
-.header {
+.header-nav {
   height: 66px;
   display: -ms-flexbox;
   display: flex;
@@ -19,12 +19,12 @@ body {
       justify-content: space-between;
   padding-top: 59px;
   max-width: 998px;
+  min-width: 998px;
   margin-left: auto;
   margin-right: auto; }
 
 .navigaton {
   height: 13px;
-  background-color: gainsboro;
   position: relative;
   right: 34px;
   bottom: 5px; }
@@ -61,6 +61,7 @@ body {
 
 .main {
   max-width: 979px;
+  min-width: 979px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -102,7 +103,9 @@ body {
 .main-content {
   display: -ms-flexbox;
   display: flex;
-  height: auto; }
+  height: auto;
+  border-bottom: 1px solid  #E8E9E9;
+  margin-bottom: 20px; }
 
 .left-nav {
   padding-top: 10px;
@@ -261,3 +264,129 @@ body {
   color: #ae3b44; }
 
 /**********************************************/
+.sponsors {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 33px;
+  padding-right: 40px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 30px; }
+
+.sponsor-image {
+  background: url("../img/sponsors.png");
+  width: 100%;
+  height: 50px; }
+
+.sponsor-image:first-child {
+  width: 100px;
+  height: 46px; }
+
+.sponsor-image:nth-child(2) {
+  width: 105px;
+  height: 46px;
+  background-position: -167px 0px; }
+
+.sponsor-image:nth-child(3) {
+  width: 100px;
+  height: 46px;
+  background-position: -325px 0px; }
+
+.sponsor-image:nth-child(4) {
+  width: 100px;
+  height: 46px;
+  background-position: -500px 0px; }
+
+.sponsor-image:nth-child(5) {
+  width: 100px;
+  height: 46px;
+  background-position: -662px 0px; }
+
+.sponsor-image:nth-child(6) {
+  width: 100px;
+  height: 46px;
+  background-position: -806px 0px; }
+
+/***************************/
+.footer {
+  padding-top: 20px;
+  border-top: 1px solid  #E8E9E9;
+  font-family: Arial;
+  color: rgba(57, 57, 57, 0.5);
+  font-weight: normal; }
+
+.footer-main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 998px;
+  min-width: 998px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.quicklinks {
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 27px; }
+
+.quicklinks h3 {
+  font-size: 15px;
+  margin-bottom: 27px; }
+
+.quick-uls {
+  display: -ms-flexbox;
+  display: flex; }
+
+.quick-uls ul {
+  padding-right: 75px; }
+
+.quick-uls ul:nth-child(3) {
+  padding-right: 0px; }
+
+.quick-uls li {
+  padding-bottom: 7px; }
+
+.security {
+  font-weight: 100;
+  font-size: 12px;
+  padding-left: -27px; }
+
+.security h3 {
+  font-size: 15px;
+  margin-bottom: 27px; }
+
+.security li {
+  padding-bottom: 7px; }
+
+.security h3 {
+  font-size: 15px;
+  margin-bottom: 27px; }
+
+.security li {
+  padding-bottom: 7px; }
+
+.touch h3 {
+  margin-bottom: 20px; }
+
+.touch ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 10px; }
+
+.touch i {
+  color: grey; }
+
+.touch > ul > li > a > .fa-rss-square:hover {
+  color: #F79236; }
+
+.touch > ul > li > a > .fa-facebook:hover {
+  color: #46639E; }
+
+.touch > ul > li > a > .fa-linkedin:hover {
+  color: #8AD4DF; }
+
+.touch > ul > li > a > .fa-tumblr-square:hover {
+  color: #33455C; }
