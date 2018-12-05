@@ -1,3 +1,81 @@
+nav {
+    width: 52%;
+}
+nav ul {
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+nav ul a {
+    color: #3c3c3c;
+    font-size: 13px;
+    transition: .3s linear;
+}
+a {
+    display: inline-block;
+}
+nav ul li:hover .submenu {
+    transform: rotateX(0deg) translate(-48%,8%);
+    z-index: 9;
+}
+
+nav ul li li:hover .under-submenu {
+    transform: rotateX(0deg) translate(1%);
+}
+
+nav ul li .submenu::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-bottom-color: #212121;
+}
+nav ul li .submenu {
+    width: 150px;
+    display: block;
+    transform-origin: 0 0 0;
+    transform: rotateX(-90deg) translate(-48%,8%);
+    transition: .3s linear;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background: #212121;
+}
+
+nav ul li li a {
+    color: #E5EDF0;
+}
+
+nav ul li .submenu li a {
+    text-indent: 11px;
+    font-size: 12px;
+    padding: 0;
+    line-height: 29px;
+    color: #E5EDF0;
+}
+
+
+nav ul li .submenu .under-submenu {
+    width: 140px;
+    display: block;
+    transform-origin: 0 0 0;
+    transform: rotateY(-90deg) translate(1%);
+    transition: .3s linear;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #212121;
+}
+/*********************/
 body {
     width: auto;
     height: 2046px; 
@@ -5,12 +83,11 @@ body {
     background: url("../img/bg.png");
 }
 
- .logic {
-     padding-left: 25px;
-     position: relative;
-     top: -17px;
- }
-
+.logic {
+    padding-left: 15px;
+    position: relative;
+    top: -20px;
+}
  
 .header-nav {
     height: 66px;
@@ -37,10 +114,13 @@ body {
     font-family: Arial;
     color: #3c3c3c;
     font-size: 13px;
-    
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: -0.26px;
     text-align: right;
+}
+
+.navigaton a:hover {
+    color: #ae3b44;
 }
 
 .outer {
@@ -50,12 +130,32 @@ body {
 }
 
 .submenu-first {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: black;
-    padding: 9px;
+    display: none;
 }
+
+.outer-li-5:hover {
+    margin-bottom: 10px;
+    .submenu-first {
+        display: flex;
+        padding-top: 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: black;
+        padding: 9px;
+    }    
+}
+
+
+.submenu-second {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: black;
+        padding: 9px;
+}
+
+
+
 
 .submenu-first>li>a {
     color: #9ca0a2;
@@ -155,7 +255,6 @@ body {
 // }
 
 .left-nav-nav ul li .crm-class li .email-class li{
-    text-indent: 58px;
     background-color: #ccc;
     border-bottom: 1px solid  #E8E9E9;
 }
@@ -470,6 +569,34 @@ body {
 .flexit {
     display: flex;
 }
-.flexit i {
-    padding-top: 15px;
+
+.flexit i{
+    padding-top: 13px;
+    padding-left: 110px;
+}
+
+.flexit-inner {
+    display: flex;
+}
+
+.flexit-inner i {
+    padding-top: 13px;
+    padding-left: 80px;
+}
+
+.lower-flex {
+    display: flex;
+}
+
+.lower-flex i {
+    padding-top: 13px;
+    width: 10px;
+}
+
+.email-class li {
+    display: flex;
+}
+
+.email-class i {
+    padding-top: 13px;
 }
