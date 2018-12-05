@@ -439,7 +439,8 @@ table {
 
 .portfolio-img {
   display: inline-block;
-  margin-bottom: 67px; }
+  margin-bottom: 67px;
+  width: 600px; }
 
 .portfolio-img img {
   margin-bottom: 23px; }
