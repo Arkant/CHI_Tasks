@@ -387,11 +387,11 @@ table {
 .portfolio {
   background-color: #ffdd99;
   width: auto;
-  min-height: 1308px;
+  min-height: 1208px;
   overflow: hidden;
   color: #393939;
   padding-top: 113px;
-  padding-bottom: 50px; }
+  padding-bottom: 75px; }
 
 .portfolio-navs {
   margin-bottom: 65px; }
