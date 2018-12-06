@@ -20,39 +20,41 @@
     <script src="assets/components/modernizr/modernizr.js"></script>
   </head>
   <body>
-            
-    <header class="header">
-          <div class="header-logo">
-              <img class="logo" src="./assets/img/logo.png" alt="none">
-          </div>
-    <header>
-        <section class="header">
+        <header >
+                <div class="header-logo">
+                    <img class="logo" src="./assets/img/logo.png" alt="none">
+                </div>
+      
                 <div class="menu">
-                        <div class="menu__icon">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
-                      
-                        <div class="menu__links">
-                                <a class="active" href="/">HOME</a>
-                                <a href="/">ABOUT</a>
-                                <a href="/">WORK</a>
-                                <a href="/">BLOG</a>
-                                <a href="/">CONTACT</a>
-                        </div>
-                    </div>
-                        <div class="banner-text">
-                            <h1>
-                                 Hi there! We are the new kids on the block<br>
-                                 and we build awesome websites and mobile apps.
-                            </h1>
-                        </div>
-                            <a href="javascript:void(0)" class="banner-button orange">WORK WITH US</a>
-        </section>   
-
+                  <div class="menu__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                
+                  <div class="menu__links">
+                          <a class="active" href="javascript:void(0)">HOME</a>
+                          <a href="javascript:void(0)">BLOG</a>
+                          <a href="javascript:void(0)">CONTACT</a>
+                          <a href="javascript:void(0)">ABOUT</a>
+                          <a href="javascript:void(0)">WORK</a>
+                  </div>
+              </div>
+          </header>
     <main>
+
+        <section class="hello">
+                <div class="banner-text">
+                        <h1>
+                                Hi there! We are the new kids on the block<br>
+                                and we build awesome websites and mobile apps.
+                        </h1>
+                        <button class="orange banner-button">WORK WITH US!</button>
+                </div>
+                                
+                                
+         </section>   
       <section class="services ">     
           <div class="services-text ">
               <h1>SERVICES WE PROVIDE</h1>
@@ -63,27 +65,27 @@
                 <div class="img-text">
                         <img src="./assets/img/flag.PNG" alt="none">
                         <h1>BRANDING</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
                 </div>
                   
                   <div class="img-text">
                         <img src="./assets/img/pencil.PNG" alt="none">
                         <h1>DESIGN</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
                   </div>
               
                   
                   <div class="img-text">
                         <img src="./assets/img/mech.PNG" alt="none">
                         <h1>DEVELOPMENT</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium. </p>
                   </div>
               
                   
                   <div class="img-text">                  
                         <img src="./assets/img/rocket.PNG" alt="none">
                       <h1>ROCKET SCIENCE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                    <p> Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p></div>
           </div>
       </section>
         <section class="team">      
@@ -92,7 +94,7 @@
                         <p>We are small team of designers and developers, who help brands with big ideas.</p>
                 </div>
 
-            <div class="team-items">
+            <div class="items">
               <div class="team-img">
                   <img src="./assets/img/Base.png" alt="none">
                 <h1>ANNE HATHAWAY</h1>
@@ -172,7 +174,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Eum a est porro possimus, 
                           amet hic expedita exercitationem.</p>
                 </div>
-                <div class="skills-items">
+                <div class="items">
                     <div class="skills-img">
                         <img   src="./assets/img/Progress.png" alt="none">
                         <h1>WEB DESIGN</h1>
@@ -224,43 +226,49 @@
                         <img src="./assets/img/comp4.png"  alt="none">
                         <h1>BLOG / MAGAZINE FLAT UI KIT</h1>
                     </div>
+                    <button class="banner-button green">LOAD MORE PROJECTS</button>
                 </div>
-                <a href="javascript:void(0)" class="banner-button green">LOAD MORE PROJECTS</a>
         </section>
         <section class="about">
                 <div class="about-text">
                         <h1>WHAT PEOPLE SAY ABOUT US</h1>
                         <p>Our clients love us!</p>
                 </div>
-                <div class="about-items">
+                <div class="items">
                     <div class="about-img ">
-                        <img src="./assets/img/Base.png" width="96px" height="96px" alt="">
-                            <p><i>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.” </i></p>
-                            <h1>CHANEL IMAN</h1>
-                            <h2>CEO of Pinterest</h2>
+                        <div class="about-avatar">
+                        </div>
+                        <div class="about-img-text">
+                                <p><i>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.” </i></p>
+                                <h1>CHANEL IMAN</h1>
+                                <h2>CEO of Pinterest</h2>
+                        </div>
                     </div>
                     <div class="about-img ">
-                        <img src="./assets/img/Base.png" width="96px" height="96px" alt="">
-                        
-                            <p><i>“Vivamus luctus urna sed urna<br> ultricies ac tempor dui sagittis. In condimentum facilisis porta.” </i></p>
-                            <h1>ADRIANA LIMA</h1>
-                            <h2>Founder of Instagram</h2>
-                        
+                        <div class="about-avatar"></div>
+                        <div class="about-img-text">
+                                <p><i>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.” </i></p>
+                                <h1>ADRIANA LIMA</h1>
+                                <h2>Founder of Instagram</h2>
+                        </div>
                     </div>
                     <div class="about-img ">
-                        <img src="./assets/img/Base.png" width="96px" height="96px" alt="">
-                        
-                            <p><i>“Vivamus luctus urna sed urna<br> ultricies ac tempor dui sagittis. In condimentum facilisis porta.” </i></p>
-                            <h1>ANNE HATHAWAY</h1>
-                            <h2>Lead Designer at Behance</h2>
+                            <div class="about-avatar"></div>
+                                <div class="about-img-text">
+                                    <p><i>“Vivamus luctus urna sed urna ultricies<br> ac tempor dui sagittis. In condimentum facilisis porta.” </i></p>
+                                    <h1>ANNE HATHAWAY</h1>
+                                    <h2>Lead Designer at Behance</h2>
+                                </div>
                     </div>
                     <div class="about-img ">
-                        <img src="./assets/img/Base.png" width="96px" height="96px" alt="">
-                            <p><i>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</i></p>
-                            <h1>EMMA STONE</h1>
-                            <h2>Co-Founder of Shazam</h2>
+                            <div class="about-avatar"></div>
+                                <div class="about-img-text">
+                                    <p><i>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</i></p>
+                                    <h1>EMMA STONE</h1>
+                                    <h2>Co-Founder of Shazam</h2>
+                                 </div>
+                            </div>
                     </div>
-                </div>
            </div>
         </section>
         <section class="contact">
@@ -268,18 +276,17 @@
                         <h1>GET IN TOUCH</h1>
                         <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
                 </div>
-              <div class="contact-items">
-                  <input  class="name" required="1" type="text" placeholder="Your name">
-              
+              <div class="items">
+                  <div class="fio">
+                        <input  class="name" required="1" type="text" placeholder="Your name">
+                        <input  class="email" required="1" type="text" placeholder="Your email">
+                        <input  class="message" required="1" type="text" placeholder="Your message">
+                  </div>
                 
-                <input  class="email" required="1" type="text" placeholder="Your email">
-                    
-                
-                <input  class="message" required="1" type="text" placeholder="Your message">
-                
-                
+
+                <button class="banner-button blue">SEND MESSAGE</button>  
               </div>
-              <a href="javascript:void(0)" class="banner-button blue">SEND MESSAGE</a>
+              
         </section>
 
       

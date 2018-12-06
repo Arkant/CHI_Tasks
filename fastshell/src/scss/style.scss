@@ -44,26 +44,35 @@ table {
 	border-spacing: 0;
 }
 
-.clearfix:before,
-.clearfix:after {
-content: " ";
-display: block;
-}
-.clearfix:after {
-clear: both;
-}
-
-
-.header {
+header {
     background-color:#87509c;
     width: 100%;
-    min-height:  596px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    text-align: center;
+    height: 95px;
+}
+.header-logo{
+    position: relative;
+    float: left;  
+    top: 55%;
+    left: 15.5%;
 }
 
+.menu__links {
+    padding-top: 19px;
+}
 
 /*menu*/
 .menu {
+
     text-align: right;
+    width: 500px;
+    height: 50px;
+    float: right;
+    position: relative;
+    top: 49%;
+    right: 4%;
 }
 
 .menu a:hover {
@@ -75,11 +84,11 @@ clear: both;
     background-color:#643a79;
 }
 .menu a {
+    margin: 0 12px;
     font-family: 'Titillium Web';
     color: white;
     font-size: 16px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
-    margin-right: 22px;
     padding-right: 12px;
     padding-left: 12px;
     padding-top: 5px;
@@ -100,7 +109,7 @@ clear: both;
 .menu__icon span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 6px;
   width: 100%;
   background: white;
   border-radius: 9px;
@@ -122,10 +131,6 @@ clear: both;
   top: 26px;
  }
 
-.menu__links {
-     padding-top: 70px;
-     margin-right: 180px;   
-}
 .menu__links-item {
     display: inline-block;
     color: #333333;
@@ -136,10 +141,6 @@ clear: both;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-}
-
-.menu__links-item:hover {
-    // text-decoration: underline;
 }
 
 .menu.menu_state_open .menu__icon span:nth-child(1) {
@@ -168,47 +169,46 @@ clear: both;
 
 /*menu*/
 
-/*LOGO*/
-
-.header-logo{
-    position: absolute;
-    float: left;  
-    top: 8%;
-    left: 16.5%;
-}
-/*LOGO*/
 
 /*Text header*/
+.hello {
+    background-color:#87509c;
+    width: 100%;
+    min-height:  596px;
+}
+
 .banner-text {
     display: block;
     color: #fff;
     margin-bottom: 60px;
     padding-top: 150px;
+    text-align: center;
 }
 
 .banner-text h1 {
     font-weight: 700;
-    text-align: center;
     font-size: 40px;
+    margin-bottom: 100px;
 }
 /*Text header*/
 
 /*Button header */
     .banner-button {
+        width: 290px;
+        background: #eb7d4b;
+        color: #fff;
+        line-height: 65px;
         border-radius: 4px;
-        color: #ffffff;
-        width: 293px;
-        height: 70px;
-        line-height: 70px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        font-size: 18px;/* Приближение из-за подстановки шрифтов */
+        text-transform: uppercase;
+        font-size: 18px;
         font-weight: 400;
-        box-shadow: -11px -30px 12px -25px rgba(0, 0, 0, 0.15) inset;
-    }
+        border: none;
 
+        box-shadow: 3px 8px 10px -5px #000000;
+        padding: 0;
+        cursor: pointer;
+    }
+    
     .orange {
         background-color:#eb7d4b;
     }
@@ -240,6 +240,7 @@ clear: both;
     width: 100%;
     padding-top: 112px;
     min-height:  638px;
+    padding-bottom: 70px; /* ПЕРЕНЕСТИ ЭТО В КОНТЕЙНЕР*/
 }
 
 .services-text {
@@ -265,14 +266,14 @@ clear: both;
 .items {
     text-align: center;
     color:#ffffff;
-    padding-bottom: 30px;
-    margin-left: 20px;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 
 .img-text {
     display:inline-block;
-    margin-bottom: 40px;
-    padding-right: 22px;
+    
+    margin: 0 10px 20px 10px;
 }
 
 .img-text img{
@@ -287,6 +288,9 @@ clear: both;
 }
 .img-text p {
     width: 250px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
 }
 
 /*************************************/
@@ -295,6 +299,7 @@ clear: both;
     width: 100%;
     padding-top: 110px;
     min-height: 805px;
+    padding-bottom: 70px;  /*ПЕРЕНЕСТИ*/
 }
 
 .team-text {
@@ -315,22 +320,18 @@ clear: both;
     line-height: 26px;
 }
 
-.team-items {
-    text-align: center;
-    color:#3c4761;
-    padding-bottom: 100px;
-    padding-right: 50px;
-    margin-left: 125px;
-}
 .team-img{
     display:inline-block;
     text-align: center;
     color: #3c4761;
     width: 200px;
-    margin-right: 75px;
-    margin-bottom: 15px;
+    margin: 0 35px 0 35px;
 }
 
+.team-img img { 
+    width: 190px;
+    height: 190px;
+}
 .team-img div{
     display:inline-block;
 }
@@ -344,6 +345,10 @@ clear: both;
 
 .team-img p {
     margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #535e75;
+    margin-bottom: 23px;
 }
 
 .circle {
@@ -367,12 +372,13 @@ clear: both;
     width:auto;
     min-height: 554px;
     padding-top: 97px;
+    padding-bottom: 70px; /*ПЕРЕНЕСТИ*/
 }
 
 .skills-text {
     color: #3c4661;
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 80px;
 }
 .skills-text h1 {
     letter-spacing: 0.10em;
@@ -390,7 +396,7 @@ clear: both;
     display:inline-block;
     text-align: center;
     color: #3c4761;
-    
+    margin: 0 40px 0 40px;
 }
 
 .skills-img h1 {
@@ -410,17 +416,13 @@ clear: both;
     padding-bottom: 100px;
 }
 
-.skills>div>h1 {
+.skills-text h1 {
     font-size: 40px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;   
     line-height: 29px;/* Приближение из-за подстановки шрифтов */   
-    padding: 1%;
-}
-.skills>div>p {
-    font-size: 18px;/* Приближение из-за подстановки шрифтов */
-    font-weight: 400;   
-    line-height: 26px;/* Приближение из-за подстановки шрифтов */   
-    padding: 1%;
+    margin-bottom: 40px;
+    font-weight: 700;   
+    letter-spacing: 0.02em;
 }
 
 /*---------------------------------------------------*/
@@ -435,6 +437,8 @@ clear: both;
 }
 
 .portfolio-navs {
+    width: 450px;
+    margin: 0 auto;
     margin-bottom: 65px;
 }
 
@@ -477,14 +481,15 @@ clear: both;
 }
 
 .portfolio-items {
+    width: 1300px;
     text-align: center;
-    margin-bottom: 12px;
+    margin: 0 auto; 
 }
 
 .portfolio-img {
     display: inline-block;
     margin-bottom: 67px;
-    width: 600px;
+    // width: 600px;
 }
 .portfolio-img img {
     margin-bottom: 23px;
@@ -523,9 +528,17 @@ clear: both;
     text-align: center;
 }
 
+.about-avatar {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: grey;
+    float: left;
+}
+
+
 .about-img {
     display: inline-block;
-    text-align: center;
     color: #3c4761;
     width: 500px;
     margin-bottom: 135px;
@@ -535,25 +548,32 @@ clear: both;
     padding-right: 50px;
 }
 
+.about-img-text {
+    width: 70%;
+    float: left;
+    padding-left: 45px;
+}
 
-.about-img p{
-    padding-top: 5px;
+.about-img-text p{
     color: #ffffff;
     font-size: 21px; /* Приближение из-за подстановки шрифтов */
     font-style: italic;
     text-align: left;
     margin-bottom: 50px;
 }
-.about-img h1{
+.about-img-text h1{
     color: #ffffff;
+    text-align: left;
     font-size: 26px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;
+    margin-bottom: 10px;
     //line-height: 26px;/* Приближение из-за подстановки шрифтов */
 }
 
-.about-img h2{
-    text-align: center;
+.about-img-text h2{
+
     color:#ffdd99;
+    text-align: left;
     font-size: 18px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
     line-height: 26px;/* Приближение из-за подстановки шрифтов */
@@ -584,44 +604,41 @@ clear: both;
     font-weight: 400;
     line-height: 26px;
 }
-.name {
-        background-color:#273a71;
-        width: 390px;
-        height: 56px;
-        color: white;
-        padding-left: 20px;
-        margin-right: 25px;
-        margin-bottom: 25px;
-}
-
-.contact-items {
-    text-align: left;
-    margin-bottom: 55px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 860px;
-}
-
 input {
     display: inline-block;
     border: 1px;
     border-radius: 2px;
     border-color: #273a71;
+    margin: 0 10px 20px 10px;
 }
+
+.fio {
+    margin-bottom: 25px;
+}
+.name {
+        background-color:#273a71;
+        width: 35%;
+        height: 56px;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+}
+
 .email {
     background-color:#273a71;
-    width: 400px;
+    width: 30%;
     height: 56px;
     color: white;
     padding-left: 15px;
+    padding-right: 15px;
 }
 .message {
-    //position: relative;
     background-color:#273a71;
-    width: 840px;
+    width: 71%;
     height: 200px;
     color: white;
     padding-left: 15px;
+    margin-bottom: 15px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
