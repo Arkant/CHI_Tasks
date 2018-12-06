@@ -335,9 +335,9 @@ header {
 .skills {
   background-color: #ffffff;
   width: auto;
-  min-height: 554px;
+  min-height: 532px;
   padding-top: 97px;
-  padding-bottom: 70px;
+  padding-bottom: 35px;
   /*ПЕРЕНЕСТИ*/ }
 
 .skills-text {
@@ -569,7 +569,7 @@ input {
 
 .name {
   background-color: #273a71;
-  width: 35%;
+  width: 36%;
   height: 56px;
   color: white;
   padding-left: 15px;
@@ -577,7 +577,7 @@ input {
 
 .email {
   background-color: #273a71;
-  width: 30%;
+  width: 36%;
   height: 56px;
   color: white;
   padding-left: 15px;
@@ -585,16 +585,18 @@ input {
 
 .message {
   background-color: #273a71;
-  width: 71%;
+  width: 77%;
   height: 200px;
   color: white;
   padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 15px; }
 
 :-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: 'TitilliumWeb';
   font-size: 18px;
+  font-weight: 400;
   opacity: 1;
   /* Firefox */ }
 
@@ -602,15 +604,32 @@ input {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   font-family: 'TitilliumWeb';
   font-size: 18px;
+  font-weight: 400;
   opacity: 1;
   /* Firefox */ }
 
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+input:focus:-moz-placeholder {
+  color: transparent; }
+
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent; }
+
+/* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent; }
+
+/* IE 10+ */
 /*---------------------------------------------------*/
 .footer {
   background-color: #344b8e;
   width: auto;
-  height: 112px;
-  padding-top: 40px; }
+  height: 60px;
+  padding-top: 40px;
+  padding-bottom: 20px; }
 
 .box_block {
   margin: 0px;
