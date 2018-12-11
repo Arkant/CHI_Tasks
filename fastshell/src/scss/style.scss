@@ -175,13 +175,13 @@ header {
     background-color:#87509c;
     width: 100%;
     min-height:  596px;
+    padding-top: 150px;
+    padding-bottom: 10px;
 }
 
 .banner-text {
     display: block;
-    color: #fff;
-    margin-bottom: 60px;
-    padding-top: 150px;
+    color: #fff;    
     text-align: center;
 }
 
@@ -247,7 +247,6 @@ header {
     color: #fff;
     text-align: center;
     margin-bottom: 53px;
-    
 }
 
 .services-text h1 {
@@ -255,6 +254,14 @@ header {
     font-size: 38px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700; 
     margin-bottom: 40px; 
+}
+.services-text>h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background-color: #14a58c;
+    margin: 20px auto;
 }
 .services-text p {
     font-size: 18px;
@@ -313,6 +320,16 @@ header {
     font-weight: 700; 
     margin-bottom: 45px; 
 }
+
+.team-text>h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background-color: #c8d9e5;
+    margin: 20px auto;
+}
+
 .team-text p {
     letter-spacing: 0.03em; 
     font-size: 18px;
@@ -331,6 +348,7 @@ header {
 .team-img img { 
     width: 190px;
     height: 190px;
+    margin-bottom: 35px;
 }
 .team-img div{
     display:inline-block;
@@ -338,8 +356,7 @@ header {
 .team-img h1 {
     font-size: 24px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700;   
-    line-height: 18px;/* Приближение из-за подстановки шрифтов */   
-    padding-top: 35px;
+    line-height: 18px;/* Приближение из-за подстановки шрифтов */      
     margin-bottom: 9px;
 }
 
@@ -385,6 +402,15 @@ header {
     font-size: 38px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700; 
     margin-bottom: 13px; 
+}
+
+.skills-text>h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background-color: #c8d9e5;
+    margin: 20px auto;
 }
 .skills-text p {
     font-size: 18px;
@@ -452,6 +478,14 @@ header {
     font-size: 38px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700; 
     margin-bottom: 40px; 
+}
+.portfolio-text>h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background-color: #e5c37f;
+    margin: 20px auto;
 }
 .portfolio-text p {
     font-size: 18px;
@@ -569,7 +603,14 @@ header {
     margin-bottom: 10px;
     //line-height: 26px;/* Приближение из-за подстановки шрифтов */
 }
-
+.about-text>h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background-color: #b73c6d;
+    margin: 20px auto;
+}
 .about-img-text h2{
 
     color:#ffdd99;
@@ -598,6 +639,14 @@ header {
     font-size: 38px;/* Приближение из-за подстановки шрифтов */
     font-weight: 700; 
     margin-bottom: 40px; 
+}
+.contact-text>h1::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background-color: #273a71;
+    margin: 20px auto;
 }
 .contact-text p {
     font-size: 18px;

@@ -51,12 +51,12 @@
         height: 160px;
     }
 }
-@media screen and (max-width: 1285px) and (min-width:590px) { 
+@media screen and (max-width: 1100px) and (min-width:590px) { 
     .img-text {
         width: 400px;
     }
     .img-text p {
-        width: 400px;
+        margin: 0 auto;
     }  
 }
 
@@ -200,12 +200,14 @@
       text-align: center;
       color: #ffffff;
     }
-
+    .hello {
+        min-height: 500px;
+    }
     .banner-text {
         display: block;
         color: #fff;
         margin-bottom: 60px;
-        padding-top: 190px;
+        padding-top: 99px;
     }
     
     .banner-text h1 {
