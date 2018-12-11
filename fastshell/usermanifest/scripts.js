@@ -1,13 +1,7 @@
-/*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
- * @version 1.0.5
- * Copyright 2018. MIT licensed.
- */
+// Create elements add styles
 let body = document.querySelector('body');
 let modal = document.createDocumentFragment();
+
 let div = document.createElement('div'); div.id = 'mydiv';
 let div1 = document.createElement('div'); div1.id = 'mydivheader'; div1.style = `width:240px; 
                                                                                  height:20px; background:#46639e; 
@@ -15,7 +9,7 @@ let div1 = document.createElement('div'); div1.id = 'mydivheader'; div1.style = 
                                                                                  margin-right: 5px;
                                                                                  `;
                                                                                  
-let h1 = document.createElement('h5'); h1.innerHTML = 'Find node element'; h1.style = 'color:white; margin-left:5px;';
+let h1 = document.createElement('h1'); h1.innerHTML = 'Find node element'; h1.style = 'color:white; margin-left:5px;';
 let input = document.createElement('input'); input.ad
 let next = document.createElement('button'); next.innerHTML = 'NEXT'; 
 let prev = document.createElement('button'); prev.innerHTML = 'PREV';
