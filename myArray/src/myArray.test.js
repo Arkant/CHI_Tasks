@@ -28,6 +28,12 @@ describe('test custom class myArray', () => {
             expect(cb).toBeCalledWith(1,0,arr);
             expect(cb).toHaveBeenLastCalledWith(4,3,arr);
           });
+
+        test('comp must be a func',() => {
+            var arr = new myArray(1,2,3,4);
+            cb = 1;
+            expect(arr.sort(cb)).toThrowError(TypeError);
+        });
     });
     
   });

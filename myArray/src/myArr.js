@@ -1,6 +1,7 @@
-class myArr {
+class myArray {
     constructor () {
         for(let i = 0; i < arguments.length; i++){
+            console.log(this[i])
             this[i] = arguments[i];
         }
     this.length = arguments.length;
@@ -32,7 +33,7 @@ class myArr {
     }
     //Method map by callback
     map(callback) {
-        let arr = new myArr();
+        let arr = new myArray();
         for (let i = 0; i < this.length; i++) {
             arr.pushTo(callback(this[i], i, this));
         }
@@ -40,7 +41,7 @@ class myArr {
     }    
     //Method filter by callback
     filter(callback) {
-        let arr = new myArr();
+        let arr = new myArray();
         for (let i = 0; i < this.length; i++) {
             if (callback(this[i], i, this)){
                 arr.pushTo(this[i]);
@@ -50,7 +51,7 @@ class myArr {
     }
     //Method create arr from value
     static from (value) {
-        let arr = new myArr();
+        let arr = new myArray();
         for (let i = 0; i < value.length; i++) {
                 arr.pushTo(value[i]);
         }
@@ -79,8 +80,6 @@ class myArr {
     }
     //вставками + пузырьком
     sort(callback) {
-
-        
         if(callback){
             console.log(' bubble sort');
           for (let i = 0; i <  this.length-1; i++){
@@ -105,7 +104,6 @@ class myArr {
                 this[j] = current;
             }
         }
-
         return this;
     }
     //spread
@@ -118,4 +116,4 @@ class myArr {
     }
 }
 
-export default myArr;
+export default myArray;
