@@ -1,4 +1,4 @@
-class myArray {
+class MyArray {
     constructor () {
         for(let i = 0; i < arguments.length; i++){
             console.log(this[i])
@@ -33,7 +33,7 @@ class myArray {
     }
     //Method map by callback
     map(callback) {
-        let arr = new myArray();
+        let arr = new MyArray();
         for (let i = 0; i < this.length; i++) {
             arr.pushTo(callback(this[i], i, this));
         }
@@ -41,7 +41,7 @@ class myArray {
     }    
     //Method filter by callback
     filter(callback) {
-        let arr = new myArray();
+        let arr = new MyArray();
         for (let i = 0; i < this.length; i++) {
             if (callback(this[i], i, this)){
                 arr.pushTo(this[i]);
@@ -51,7 +51,7 @@ class myArray {
     }
     //Method create arr from value
     static from (value) {
-        let arr = new myArray();
+        let arr = new MyArray();
         for (let i = 0; i < value.length; i++) {
                 arr.pushTo(value[i]);
         }
@@ -116,4 +116,5 @@ class myArray {
     }
 }
 
-export default myArray;
+
+export default MyArray;
